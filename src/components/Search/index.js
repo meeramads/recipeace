@@ -93,6 +93,8 @@ class Search extends Component {
                     </Form>
                 </Grid.Column>
             </Grid>
+              
+
             // <div class='Search'>
             //     <form onSubmit={(e) => this.handleSubmit(e)}>
             //         <input type='text' value={this.state.query} onChange={this.handleChange} name='query'>Search</input>
