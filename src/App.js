@@ -57,7 +57,7 @@ class App extends Component {
 
   search = async(data) =>{
     try {
-      const searchResponse = await fetch('http://localhost:8000', {
+      const searchResponse = await fetch('http://localhost:3000', {
         method: 'POST',
         credentials: 'include',
         body: data,
@@ -87,7 +87,6 @@ class App extends Component {
       <main>
         <BrowserRouter>
           <Switch>
-            <Route exact path='/'/>
             <Route exact path='/register' render= {(props) => <Register {...props} register={this.register}/>}/>
             <Route component={My404} />
           </Switch>
