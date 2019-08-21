@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Register from './components/Register';
+import Register from './components/User/Register';
 import { async } from 'q';
 
 const My404 = () =>{
