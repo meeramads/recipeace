@@ -5,6 +5,7 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Register from './components/User/Register';
 import Search from './components/Search';
 import Login from './components/User/Login';
+import Profile from './components/User';
 import { async } from 'q';
 
 const My404 = () =>{
@@ -117,6 +118,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/login' render= {(props) => <Login {...props} logIn={this.logIn}/>}/>
             <Route exact path='/register' render= {(props) => <Register {...props} register={this.register}/>}/>
+            <Route exact path='/profile' render= {(props) => <Profile {...props} userInfo={this.state}/>}/>
             <Route component={My404} />
           </Switch>
         </BrowserRouter>
